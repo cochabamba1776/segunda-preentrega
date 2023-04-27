@@ -1,0 +1,227 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+.navbar-brand img{
+  
+  height: 64px;
+}
+
+.navbar a{
+  color: aliceblue;
+}
+
+.carousel-inner h2
+{
+color: rgb(26, 25, 25);
+}
+.carousel-inner p{
+  font-size: 20px;
+  color: black;
+}
+
+.carousel-item  img{
+  height: 700px;
+  
+}
+
+.carousel-inner h2 {
+  height: 50px;
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-inner p {
+  height: 400px;
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+
+}
+
+
+/* pagina nosotros*/
+.container-padre{
+  background-color: #6c757d;
+  justify-content: center;
+  display: flex;
+  padding: 100px;
+  gap: 100px;
+  height: 700px;
+}
+
+.imgnosotros{
+  height: 500px;
+  width: 700px;
+}
+.container-padre p{
+  font-size: 20px;
+  width: 300px;
+}
+
+.container-padre img{
+  justify-content: end;
+}
+
+
+
+/*footer de paginas */
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  align-items: center;
+   width: 100%;
+   bottom: 1;
+}
+footer p {
+  padding: 60px;
+  font-size: medium;
+}
+
+footer i {
+  gap:20px;
+}
+
+/*pagina especialidades*/
+.container-padre-especialidades{
+  background-color: #6c757d;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+}
+.container-padre-especialidades img{
+  width: 500px;
+  height: 300px;
+   
+}
+
+.container-tecx-especialidades{
+position: absolute;
+width: 60%;
+font-size: 25px;
+top: 200px;
+left: 700px;
+}
+
+.container-padre-obras{
+background-color:#6c757d ;
+height: 700px;
+padding: 50px;
+}
+.container-galeria{
+  display: grid;
+  grid-template-rows: repeat(4 , 200px);
+  grid-template-columns: repeat(3,300px);
+  gap: 10px;
+}
+.container-galeria img{
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.img-1{
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.img-2 {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  
+}
+
+.img-3{
+  grid-column: 2/3;
+  grid-row: 2/4;
+
+}
+
+.img-4 {
+  grid-column: 3/4;
+  grid-row: 2/4;
+
+}
+
+.container-textos-obras{
+  position: absolute;
+  font-size: 20px;
+  height: 500px;
+  width: 600px;
+  left:1000px ;
+  top:200px;
+}
+
+/*pagina obras*/
+
+.container-padre-contacto {
+  background-color: #6c757d;
+  justify-content: center;
+  display: flex;
+  padding: 100px;
+  gap: 100px;
+  height: 700px;
+}
+
+.container-padre-contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding-left: 500px;
+  
+}
+
+.container-padre-contacto img{
+position: absolute;
+height: 500px;
+width: 500px;
+top: 200;
+left: 1000px;
+}
+
+
+@media screen and (max-width: 425px) {
+  .carousel-inner{
+    height: 900px;
+  }
+
+  .carousel-inner h2{
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+  }
+
+    .carousel-inner p {
+        display: flex;
+          flex-direction: column;
+          justify-content: end;
+    }
+
+  .container-padre {
+    flex-direction: column;
+    height: 900px;
+    padding: 50px;
+  gap : 10px;
+    
+  }
+
+  .container-padre img {
+    height: 200px;
+    width: 250px;
+  }
+
+
+footer {
+  flex-direction: column ;
+}
+
+}
+
